@@ -1,0 +1,8 @@
+name: Train Loan Model
+
+on:
+   push:
+       paths:
+           - model-demo/**
+           -.github/workflows/train-model.yml
+           
