@@ -1,6 +1,5 @@
 import pandas as pd
 import pickle
-import train_test_split
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.linear_model import LogisticRegression
@@ -31,7 +30,7 @@ y_pred = model.predict(X_test)
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 
-model_path = "model-demo/model-op.pkl"
+model_path = "model-op.pkl"
 
 with open(model_path, "wb") as f:
     pickle.dump(model, f)
